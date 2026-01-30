@@ -1,4 +1,5 @@
 from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify
 
 from services.cart_service import CartService
 from services.inventory_service import InventoryService
@@ -70,3 +71,4 @@ def prepare_checkout(user_id):
             "total": cart["total"],
         }
     })
+
