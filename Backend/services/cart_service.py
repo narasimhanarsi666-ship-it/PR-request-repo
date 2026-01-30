@@ -1,5 +1,6 @@
 from typing import Dict, List
 from uuid import uuid4
+from uuid import uuid4
 
 # Simple in-memory stores (replace with DB later)
 _CARTS: Dict[str, List[dict]] = {}
@@ -77,3 +78,4 @@ class CartService:
             "total": round(total, 2),
             "coupon_applied": coupon_code.upper() if discount_rate > 0 else None,
         }
+
