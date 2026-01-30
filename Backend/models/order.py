@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from dataclasses import dataclass, field
 from datetime import datetime
 from typing import List
 
@@ -51,3 +52,4 @@ class Order:
             "status": self.status,
             "created_at": self.created_at.isoformat(),
         }
+
