@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from datetime import datetime
+from datetime import datetime
 
 
 @dataclass
@@ -14,3 +15,4 @@ class User:
             "email": self.email,
             "created_at": self.created_at.isoformat(),
         }
+
