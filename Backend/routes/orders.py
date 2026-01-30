@@ -18,7 +18,7 @@ def get_order(order_id):
 
     return jsonify(order.to_dict())
 
-
+get_order()
 @orders_bp.route("/user/<user_id>", methods=["GET"])
 def list_orders_for_user(user_id):
     """
@@ -30,3 +30,4 @@ def list_orders_for_user(user_id):
         "count": len(orders),
         "orders": orders
     })
+
