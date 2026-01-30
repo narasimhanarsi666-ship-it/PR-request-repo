@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from datetime import datetime
+from datetime import datetime
 
 
 @dataclass
@@ -27,3 +28,4 @@ class Product:
             "stock": self.stock,
             "active": self.active,
         }
+
