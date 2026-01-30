@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from services.cart_service import CartService
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify###
 
 cart_bp = Blueprint("cart", __name__)
 cart_service = CartService()
@@ -57,4 +57,5 @@ def remove_from_cart(user_id):
 
     cart_service.remove_item(user_id, data["sku"])
     return jsonify({"ok": True})
+
 
