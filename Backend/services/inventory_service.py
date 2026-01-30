@@ -1,5 +1,6 @@
 from typing import Dict
 from models.product import Product
+##
 
 # In-memory product catalog (replace with DB later)
 _PRODUCTS: Dict[str, Product] = {
@@ -37,3 +38,4 @@ class InventoryService:
             product = _PRODUCTS.get(item["sku"])
             if product:
                 product.stock += item["qty"]
+
